@@ -14,11 +14,11 @@ __________________________________________________________
 **2. Step-by-step Instalasi Ubuntu Server dengan Virtualbox**
   Karena saya menggunakan Distro Arch - CachyOS, step-by-stepnya sebagai berikut:
   1. Update system untuk memastikan sistem dalam kondisi terbaru sebelum dilakukan instalasi
-     bash : sudo pacman -Syu
+     ** sudo pacman -Syu **
      <img width="912" height="204" alt="image" src="https://github.com/user-attachments/assets/b6d1e8ba-1d75-4819-b191-16fbd3082742" />
 
   2. Instalasi Virtualbox
-     bash : sudo pacman -S virtualbox virtualbox-guest-iso virtualbox-host-dkms
+     ** sudo pacman -S virtualbox virtualbox-guest-iso virtualbox-host-dkms **
      <img width="912" height="279" alt="image" src="https://github.com/user-attachments/assets/5619794c-72ac-4b9a-8c12-e951a468be26" />
 
   3. Sinkronisasi Database dan Header
