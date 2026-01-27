@@ -15,27 +15,27 @@ __________________________________________________________
   Karena saya menggunakan Distro Arch - CachyOS, step-by-stepnya sebagai berikut:
   1. Update system untuk memastikan sistem dalam kondisi terbaru sebelum dilakukan instalasi
      
-     ** sudo pacman -Syu . **
+     `sudo pacman -Syu`
      <img width="912" height="204" alt="image" src="https://github.com/user-attachments/assets/b6d1e8ba-1d75-4819-b191-16fbd3082742" />
 
   3. Instalasi Virtualbox
-     ** sudo pacman -S virtualbox virtualbox-guest-iso virtualbox-host-dkms . **
+     `sudo pacman -S virtualbox virtualbox-guest-iso virtualbox-host-dkms`
      <img width="912" height="279" alt="image" src="https://github.com/user-attachments/assets/5619794c-72ac-4b9a-8c12-e951a468be26" />
 
   4. Sinkronisasi Database dan Header
-     bash : sudo pacman -Syu linux-cachyos-headers
+     `sudo pacman -Syu linux-cachyos-headers`
      <img width="676" height="232" alt="image" src="https://github.com/user-attachments/assets/c05f34ba-f100-42cd-ad54-43cb75cf08c4" />
 
   5. Instalasi Driver DKMS
-     bash : sudo pacman -S virtualbox-host-dkms
+     `sudo pacman -S virtualbox-host-dkms`
      <img width="561" height="209" alt="image" src="https://github.com/user-attachments/assets/474fa3e9-4419-419c-aa8c-cb34fe095642" />
 
   6. Picu Kompilasi Driver
-     bash : sudo dkms autoinstall
+     `sudo dkms autoinstall`
      <img width="248" height="57" alt="image" src="https://github.com/user-attachments/assets/f8ad9808-b267-46b9-b7e2-ff623d6987e3" />
 
   7. Load Modul Kembali
-     bash : sudo modprobe vboxdrv
+     `sudo modprobe vboxdrv`
      <img width="248" height="57" alt="image" src="https://github.com/user-attachments/assets/1a28edb3-82fc-4680-8ac2-5c700860ca24" />
 
     ** Lalu Restart PCnya. **
@@ -120,8 +120,8 @@ __________________________________________________________
 
   30. **Setelah proses installing selesai, login dengan username dan password yang sudah diisi sebelumnya**
   31. **Lakukan pengetesan jaringan dengan mengetik :**
-      bash : ping 8.8.8.8
-      atau bash : ping google.com
+      `ping 8.8.8.8`
+      atau `ping google.com`
       <img width="813" height="678" alt="image" src="https://github.com/user-attachments/assets/ce5a7547-1a58-44c8-8e4a-5c9fc6414d61" />
 
 
