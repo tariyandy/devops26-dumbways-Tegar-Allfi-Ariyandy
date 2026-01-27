@@ -14,26 +14,27 @@ __________________________________________________________
 **2. Step-by-step Instalasi Ubuntu Server dengan Virtualbox**
   Karena saya menggunakan Distro Arch - CachyOS, step-by-stepnya sebagai berikut:
   1. Update system untuk memastikan sistem dalam kondisi terbaru sebelum dilakukan instalasi
-     ** sudo pacman -Syu **
+     
+     ** sudo pacman -Syu . **
      <img width="912" height="204" alt="image" src="https://github.com/user-attachments/assets/b6d1e8ba-1d75-4819-b191-16fbd3082742" />
 
-  2. Instalasi Virtualbox
-     ** sudo pacman -S virtualbox virtualbox-guest-iso virtualbox-host-dkms **
+  3. Instalasi Virtualbox
+     ** sudo pacman -S virtualbox virtualbox-guest-iso virtualbox-host-dkms . **
      <img width="912" height="279" alt="image" src="https://github.com/user-attachments/assets/5619794c-72ac-4b9a-8c12-e951a468be26" />
 
-  3. Sinkronisasi Database dan Header
+  4. Sinkronisasi Database dan Header
      bash : sudo pacman -Syu linux-cachyos-headers
      <img width="676" height="232" alt="image" src="https://github.com/user-attachments/assets/c05f34ba-f100-42cd-ad54-43cb75cf08c4" />
 
-  4. Instalasi Driver DKMS
+  5. Instalasi Driver DKMS
      bash : sudo pacman -S virtualbox-host-dkms
      <img width="561" height="209" alt="image" src="https://github.com/user-attachments/assets/474fa3e9-4419-419c-aa8c-cb34fe095642" />
 
-  5. Picu Kompilasi Driver
+  6. Picu Kompilasi Driver
      bash : sudo dkms autoinstall
      <img width="248" height="57" alt="image" src="https://github.com/user-attachments/assets/f8ad9808-b267-46b9-b7e2-ff623d6987e3" />
 
-  6. Load Modul Kembali
+  7. Load Modul Kembali
      bash : sudo modprobe vboxdrv
      <img width="248" height="57" alt="image" src="https://github.com/user-attachments/assets/1a28edb3-82fc-4680-8ac2-5c700860ca24" />
 
