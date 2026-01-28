@@ -3,8 +3,7 @@
     2. Install Ubuntu Server 22.04.x LTS menggunakan Virtualbox/VMware/Virtualization Tool pilihan kalian dan buat step-by-step langkah instalasinya!
         - Gunakan IP Address xxx.xxx.xxx.208 untuk server VM kalian!
         - Pastikan Ubuntu Server kalian ada jaringan dengan test menggunakan command ping 8.8.8.8 / ping google.com
-
-__________________________________________________________
+---
 
 **1. Apa itu DevOps ?**
    Devops adalah Tim yang membuat system automation untuk membatu tim Developer dan Operations mempercepat rilis program ke publik dengan meminimalisir kesalahan dan kegagalan.
