@@ -1,15 +1,36 @@
-
 **Task : 1. Akses server menggunakan terminal**
+1. Instal OpenSSH agar koneksi dari terminal Laptop kita dapat terhubung dengan Virtual Machine. Dengan ``sudo install openssh-server``.
+   <img width="801" height="146" alt="image" src="https://github.com/user-attachments/assets/218e7dbf-c3e6-4e50-8dad-b4a3a2693aee" />
 
+2. Pastikan system ssh sudah running yang dapat dilihat dengan ``sudo systemctl status ssh`` digunakan untuk mengatur beberapa aplikasi yang berjalan di server.
+   <img width="807" height="426" alt="image" src="https://github.com/user-attachments/assets/750e046f-f029-4527-a500-52063b8645b2" />
+Namun jika belum running dapat dengan ``sudo systemctl restart ssh``.
+
+3. Untuk akses Virtual Machine, dapat diakses dengan ``ssh username@ipvm``. Contohnya ``ssh tariyandy@100.75.106.107``.
+   <img width="905" height="429" alt="image" src="https://github.com/user-attachments/assets/c946da5c-80ec-4184-82c7-2655285d5570" />
+
+4. Untuk mengakses file yang terdapat pada Virtual Machine, apa yang diakses pada terminal komputer akan sama dengan yang terdapat pada Virtual Machine. Contohnya dengan ``ls`` untuk melihat isi file.
+   <img width="1364" height="186" alt="image" src="https://github.com/user-attachments/assets/c255ea58-5b4b-4685-91ff-2d2a0f7e6ee1" />
 
 
 ----------------------------------------------------------------------------------------------------------------------
 
 
-
 **Task : 2. Konfigurasi SSH agar dapat diakses hanya menggunakan publickey**
+1. ``ssh-keygen`` digunakan untuk membuat dan mendapatkan kunci ssh. Lalu masukkan lokasi penyimpanan kunci dengan /home/username/.ssh/namakunci``. Contohnya ``/home/tariyandy/.ssh/gembok``.
+   <img width="886" height="368" alt="image" src="https://github.com/user-attachments/assets/68df5df8-badb-480f-9b67-0ded5ddb97bd" />
 
+2. Lalu check isi folder ``.ssh`` dengan ``ls``.
+   <img width="886" height="66" alt="image" src="https://github.com/user-attachments/assets/435dbbc0-40a6-490b-b4c0-c53be4c1a31d" />
 
+3. Buka file gembok.pub untuk melihat public keynya dengan ``cat gembok.pub`` lalu copy isi public keynya. 
+   <img width="881" height="164" alt="image" src="https://github.com/user-attachments/assets/cc296d1f-3177-48d3-8f57-94400bf79d4d" />
+
+4. Setelah mengcopy publik keynya, masuk kedalam file ``authorized_keys`` lalu paste public keynya kedalam file tersebut dengan ``nano authorized_key``
+   <img width="881" height="164" alt="image" src="https://github.com/user-attachments/assets/b2935dc0-771d-4ab9-9aa0-cc1e475bcea6" />
+
+5. Keluar dari ssh sebelumnya dengan ``logout``, lalu masuk lagi kedalam ssh dengan ``ssh -i .ssh/gembok username@ipvm``
+   <img width="886" height="66" alt="image" src="https://github.com/user-attachments/assets/b370e86c-c801-4e5a-a49a-aca7b2962cda" />
 
 
 ----------------------------------------------------------------------------------------------------------------------
