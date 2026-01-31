@@ -1,14 +1,18 @@
-**Task :**
+**Task Day-1**
+    
     1. Secara konsep, jelaskan apa itu DevOps dengan bahasa kalian!
+    
     2. Install Ubuntu Server 22.04.x LTS menggunakan Virtualbox/VMware/Virtualization Tool pilihan kalian dan buat step-by-step langkah instalasinya!
         - Gunakan IP Address xxx.xxx.xxx.208 untuk server VM kalian!
         - Pastikan Ubuntu Server kalian ada jaringan dengan test menggunakan command ping 8.8.8.8 / ping google.com
----
+        
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **1. Apa itu DevOps ?**
    Devops adalah Tim yang membuat system automation untuk membatu tim Developer dan Operations mempercepat rilis program ke publik dengan meminimalisir kesalahan dan kegagalan.
    DevOps juga melalukan monitoring setelah program di rilis dan deploy ke publik. 
-
+        
+----------------------------------------------------------------------------------------------------------------------------------------------------------
    
 **2. Step-by-step Instalasi Ubuntu Server dengan Virtualbox**
   Karena saya menggunakan Distro Arch - CachyOS, step-by-stepnya sebagai berikut:
