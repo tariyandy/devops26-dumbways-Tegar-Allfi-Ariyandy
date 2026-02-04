@@ -53,9 +53,11 @@ Jika kamu ingin mulai menggunakan Git di terminal (tempat kamu menjalankan PM2 t
 
 8. Untuk menyembunyikan file agar tidak tampil di git dengan cara membuat file baru bernama `.gitignore`. Lalu tuliskan didalam file tersebut file mana yang akan disembunyikan. COntoh `file4`.
 
+
    <img width="626" height="185" alt="image" src="https://github.com/user-attachments/assets/bb221908-ca39-4f2b-9d07-6d95b0012536" />
 
-10. Setelah file4 disembunyikan di git, lakukan comit untuk mendeploy file yang sudah kita kerjakan tadi dengan `git commit -m "catatan commit"`.
+9. Setelah file4 disembunyikan di git, lakukan comit untuk mendeploy file yang sudah kita kerjakan tadi dengan `git commit -m "catatan commit"`.
+    
     <img width="629" height="196" alt="image" src="https://github.com/user-attachments/assets/58b9bc91-2736-48f6-a45a-30bd40e9b63c" />
 
     <img width="626" height="162" alt="image" src="https://github.com/user-attachments/assets/817d9291-024e-4034-ba20-5aa9b5f5cb2d" />
