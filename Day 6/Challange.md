@@ -29,10 +29,13 @@ Urutan pengerjaan sebagai berikut :
   <img width="623" height="206" alt="image" src="https://github.com/user-attachments/assets/41428d90-9547-4489-953d-f630c2aae207" />
 
 **Config Load Balancer**
+
 - Install nginx di Server Load Balancer
+  
   <img width="623" height="145" alt="image" src="https://github.com/user-attachments/assets/cb8b8f82-3a12-4076-92e8-28ccd57ad1e8" />
 
-- Buat file baru yang digunakan untuk konfigurasi. Dengan `sudo nano /etc/nginx/conf.d/wayshub-lb.conf`
+- Buat file baru yang digunakan untuk konfigurasi. Dengan `sudo nano /etc/nginx/conf.d/wayshub-lb.conf`. Hapus tanda `#` di `ip_hash` jika ingin menjalankan metode IP Hash. Dan Hapus tanda `#` di `loast_conn;` jika ingin mengaktifkan metode Least Connection.
+  
   <img width="623" height="399" alt="image" src="https://github.com/user-attachments/assets/0244f423-2bb5-438b-9d4b-e1e02bbd876d" />
 
 - Setelah itu simpan dengan `ctrl+o`, `enter`, `ctrl+x`
@@ -56,6 +59,7 @@ Urutan pengerjaan sebagai berikut :
   <img width="623" height="218" alt="image" src="https://github.com/user-attachments/assets/a12abeb0-b298-4b29-b64c-064cdf40137e" />
 
 **Jalankan nginx pada Load Balancer**
+
 - Untuk menjalankan nginx pada load balancer dengan memasukkan ip load balancer di browser.
 - **Untuk hasil dari Metode Round Robin**, jika browser direfresh, maka akan berpindah secara bergantian dari Server A ke Server B.
 
